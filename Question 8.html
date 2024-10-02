@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form id="registrationForm">
+            <div>
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber" pattern="[0-9]{7}" title="Enter a 7-digit numeric value" required>
+                <span id="rollNumberError" class="error"></span>
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z\s]+" title="Enter alphabetical characters only" required>
+                <span id="nameError" class="error"></span>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" min="1900-01-01" max="2022-12-31" required>
+                <span id="dobError" class="error"></span>
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+                <span id="addressError" class="error"></span>
+            </div>
+            <div>
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" selected disabled>Select a course</option>
+                    <option value="Course1">Course 1</option>
+                    <option value="Course2">Course 2</option>
+                    <option value="Course3">Course 3</option>
+                </select>
+                <span id="courseError" class="error"></span>
+            </div>
+            <div>
+                <label for="terms">Agree to terms and conditions:</label>
+                <input type="checkbox" id="terms" name="terms" required>
+                <span id="termsError" class="error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            clearErrors();
+
+            if (!validateRollNumber()) {
+                return;
+            }
+
+            if (!validateName()) {
+                return;
+            }
+
+            if (!validateDOB()) {
+                return;
+            }
+
+            if (!validateAddress()) {
+                return;
+            }
+
+            alert("Form submitted successfully!");
+        });
+
+        function clearErrors() {
+            document.getElementById("rollNumberError").textContent = "";
+            document.getElementById("nameError").textContent = "";
+            document.getElementById("dobError").textContent = "";
+            document.getElementById("addressError").textContent = "";
+            document.getElementById("courseError").textContent = "";
+            document.getElementById("termsError").textContent = "";
+        }
+
+        function validateRollNumber() {
+            var rollNumber = document.getElementById("rollNumber").value;
+            if (rollNumber.length !== 7 || isNaN(rollNumber)) {
+                document.getElementById("rollNumberError").textContent = "Please enter a valid 7-digit numeric roll number.";
+                return false;
+            }
+            return true;
+        }
+
+        function validateName() {
+            var name = document.getElementById("name").value;
+            if (!/^[A-Za-z\s]+$/.test(name)) {
+                document.getElementById("nameError").textContent = "Please enter alphabetical characters only.";
+                return false;
+            }
+            return true;
+        }
+
+        function validateDOB() {
+            var dob = document.getElementById("dob").value;
+            if (!dob) {
+                document.getElementById("dobError").textContent = "Date of Birth is required.";
+                return false;
+            }
+            return true;
+        }
+
+        function validateAddress() {
+            var address = document.getElementById("address").value;
+            if (!address) {
+                document.getElementById("addressError").textContent = "Address is required.";
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

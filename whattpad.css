@@ -1,0 +1,266 @@
+body{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-color: rgb(253, 245, 230);
+    
+}
+h2{
+    color: rgb(234, 76, 8);
+}
+.dropdown  button{
+    background-color: rgb(253, 245, 230);
+    color: black;
+    padding: 0px 0px;
+    cursor: pointer;
+    display: block;
+    border: none;
+
+}
+.dropdown ,a{
+    text-decoration: none;
+    display: block;
+    background-color:rgb(253, 245, 230);
+    color: black;
+    padding: 10px  15px;
+
+
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color:rgb(253, 245, 230);
+    min-width: 80px;
+    border-radius: 2px 2px 2px 2px ;
+    box-shadow: 2px  2px 5px rgba(23, 23, 23, 0.747) ;
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown a:hover  {
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    
+}
+img{
+    width:150px;
+    height: 40px;
+}
+.b , .c   {
+    margin: 10px;
+}
+.search{
+    margin-left: 35px;
+    margin-top: 10px;
+    display: flex;
+    align-self: baseline;
+    
+    
+}
+/* .right{
+    margin-left:5px;
+
+} */
+.dropdown{
+    margin-left: 700px;
+    margin-top: 10px;
+}
+.login {
+    margin: 20px;
+}
+
+.header{
+    border-bottom: 2px solid black;
+}
+.but{
+    width: 100px;
+    height: 42px;
+    border-radius: 16px;
+    margin-top: 6px;
+    background-color: rgb(57, 20, 57);
+    color: white;
+    padding: 0px 20px;
+    color: whitesmoke;
+}
+.writingcontent{
+    height: 470px;
+    width: 570px;
+    margin-left: 220px;
+    margin-top:150px;
+    
+
+}
+h2{
+    font-weight: 700;
+    font-size: 60px;
+    margin: 16px  0px 30px;
+}
+h3{
+    font-weight: 400;
+    font-size: 25px;
+    margin: 25px  0px 12px;
+}
+h4{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px  0px 0px;
+
+}
+p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 4px  0px 0px;
+
+}
+.im{
+    width: 570px;
+    height: 360px;
+    margin-top: 250px;  
+} 
+#lp{
+    width: 570px;
+    height: 360px;
+}
+.main{
+    display:flex;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600px;
+    justify-content: center;
+}
+.flim{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:50px;
+}
+/* #aee{
+    justify-content: center;
+    align-items: center;
+} */
+
+.see{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.same{
+    background-color: orangered;
+    color: #ffff;
+    border-radius: 6px;
+     margin: 3px 16px 3px 0px;
+    padding: 5px 25px;
+}
+.studio{
+    display: flex;
+    width: 1000px;
+    height: 266px;
+    margin: 80px 268px 0px;
+    padding: 0px 10px;
+}
+.cw{
+    width: 451px;
+    height: 283px;
+    margin:  0px 0px 0px 10px;
+}
+.img{
+    display: flex;
+    align-items: center;
+    
+}
+#s{
+    width: 31px;
+    height: 52px;
+}
+#u{
+    width: 61px;
+    height: 20px;
+}
+#k{
+    width: 81px;
+    height: 20px; 
+}
+#s {
+    margin: 10px;
+}
+#u , #k{
+    margin-left :50px;
+}
+.new{
+    display: flex;
+    margin: 110px 261px 0px;
+    padding: 0px 10px;
+}
+.hy{
+    width: 446px;
+    height: 225px;
+    margin: 30px 50px  0px 0px ;
+   /* align-items: right;
+   justify-content: right; */
+   text-align: right;
+}
+.si , #y{
+    width: 348px;
+    height: 225px;
+}
+/* .imgt{
+    display: flex;
+    align-items: center;
+} */
+#a{
+    width: 110px;
+    height: 25px;
+}
+#b{
+    width: 87px;
+    height: 20px;
+}
+#c{
+    width: 97px;
+    height: 33px;
+}
+.sie ,#cv{
+    width: 348px;
+    height: 315px;
+}
+#a,#b,#c{
+margin: 0px 0px 0px 50px;
+}
+#z{
+    width: 203px;
+    height: 27px;
+}
+#x{
+    width: 190px;
+    height: 27px;
+}h3{
+    font: 24px;
+    font-family: sans-serif;
+}
+#j{
+    font:20px;
+    font-family: sans-serif;
+}
+.studio .cw p{
+    font:20px;
+    font-family: sans-serif;
+}
+#hj{
+    text-align: center;
+    text-decoration: underline;
+
+}
+#a {
+    background-color: rgb(253, 245, 230);
+}
+#q{
+    margin-top: 2px;
+}
+.singup{
+    margin-top: 8px;
+}
